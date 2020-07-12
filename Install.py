@@ -15,23 +15,23 @@ class tool:
       system=sys()
       os.system("clear")
       logo.ins_tnc()
-      inp=input("\033[1;33m Do you want to install Tool-X [Y/n]> \033[00m")
+      inp=input("\033[1;33m Do you want to install Power-jam[Y/n]> \033[00m")
       if inp=="y" or inp=="Y":
         os.system("clear")
         logo.installing()
         if system.sudo is not None:
           #require root permission
-          if os.path.exists(system.conf_dir+"/Tool-X"):
+          if os.path.exists(system.conf_dir+"/Power-Jam"):
             pass
           else:
-            os.system(system.sudo+" mkdir "+system.conf_dir+"/Tool-X")
-          os.system(system.sudo+" cp -r modules core Tool-X.py "+system.conf_dir+"/Tool-X")
-          os.system(system.sudo+" cp -r core/Tool-X "+system.bin)
-          os.system(system.sudo+" cp -r core/toolx "+system.bin)
-          os.system(system.sudo+" chmod +x "+system.bin+"/Tool-X")
-          os.system(system.sudo+" chmod +x "+system.bin+"/toolx")
-          os.system("cd .. && "+system.sudo+" rm -rf Tool-X")
-          if os.path.exists(system.bin+"/Tool-X") and os.path.exists(system.conf_dir+"/Tool-X"):
+            os.system(system.sudo+" mkdir "+system.conf_dir+"/Power-Jam")
+          os.system(system.sudo+" cp -r Power-Jam.py "+system.conf_dir+"/Power-Jam")
+          os.system(system.sudo+" cp -r Power-Jam "+system.bin)
+          os.system(system.sudo+" cp -r Power-Jam "+system.bin)
+          os.system(system.sudo+" chmod +x "+system.bin+"/Power-Jam")
+          os.system(system.sudo+" chmod +x "+system.bin+"/Power-Jam")
+          os.system("cd .. && "+system.sudo+" rm -rf Power-Jam")
+          if os.path.exists(system.bin+"/Power-Jam") and os.path.exists(system.conf_dir+"/Power-Jam"):
             os.system("clear")
             logo.ins_sc()
             tmp=input("\033[1;36m ##> \033[00m")
@@ -45,14 +45,14 @@ class tool:
           if os.path.exists(system.conf_dir+"/Tool-X"):
             pass
           else:
-            os.system("mkdir "+system.conf_dir+"/Tool-X")
-          os.system("cp -r modules core Tool-X.py "+system.conf_dir+"/Tool-X")
-          os.system("cp -r core/Tool-X "+system.bin)
-          os.system("cp -r core/toolx "+system.bin)
-          os.system("chmod +x "+system.bin+"/Tool-X")
-          os.system("chmod +x "+system.bin+"/toolx")
-          os.system("cd .. && rm -rf Tool-X")
-          if os.path.exists(system.bin+"/Tool-X") and os.path.exists(system.conf_dir+"/Tool-X"):
+            os.system("mkdir "+system.conf_dir+"/Power-Jam")
+          os.system("cp -r Power-Jam "+system.conf_dir+"/Power-Jam")
+          os.system("cp -r Power-Jam "+system.bin)
+          os.system("cp -r Power-Jam "+system.bin)
+          os.system("chmod +x "+system.bin+"/Power-Jam")
+          os.system("chmod +x "+system.bin+"/Power-Jam")
+          os.system("cd .. && rm -rf Power-Jam")
+          if os.path.exists(system.bin+"/Power-Jam") and os.path.exists(system.conf_dir+"/Power-Jam"):
             os.system("clear")
             logo.ins_sc()
             tmp=input("\033[1;36m ##> \033[00m")
