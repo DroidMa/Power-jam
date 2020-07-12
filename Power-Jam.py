@@ -1,6 +1,6 @@
 import os
 import sys
-from modules.menu import *
+from menu import *
 
 if __name__=="__main__":
   try:
