@@ -4,8 +4,8 @@
 import os
 import json
 from time import sleep
-from .logo import *
-from .system import *
+from logo import *
+from system import *
 
 class main:
   def install_tools(self):
