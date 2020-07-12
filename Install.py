@@ -5,8 +5,8 @@
 import os
 import sys
 from time import sleep
-from modules.logo import *
-from modules.system import *
+from Logo import *
+from System import *
 
 class tool:
   @classmethod
