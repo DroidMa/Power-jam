@@ -12,7 +12,7 @@ elif [ -d /etc ]; then
 fi
 
 if [ -e /usr/lib/sudo ]; then
-	sudo python3 $conf_dir/Power-Jam/Power-Jam.py
+	sudo python3 $conf_dir/Power-Jam.py
 else
 	python3 $conf_dir/Power-Jam.py
 fi
